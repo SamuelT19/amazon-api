@@ -9,12 +9,12 @@ app.use(cors({ origin: true }));
 
 app.use(express.json());
 
-const port = 4444;
+// const port = 4444;
 
-app.listen(port, (err) => {
-  if (err) throw err;
-  console.log(`server listening in port:${port} : http://localhost:4444/`);
-});
+// app.listen(port, (err) => {
+//   if (err) throw err;
+//   console.log(`server listening in port:${port} : http://localhost:4444/`);
+// });
 
 app.get("/", (req, res) => {
   res.status(200).json({
