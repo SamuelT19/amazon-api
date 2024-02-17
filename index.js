@@ -5,7 +5,7 @@ dotenv.config();
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 const app = express();
-app.use(cors({ origin: true }));
+app.use(cors({ origin: 'true' }));
 
 app.use(express.json());
 
@@ -13,7 +13,7 @@ const port = process.env.PORT;
 
 app.listen(port, (err) => {
   if (err) throw err;
-  console.log(`server listening in port:${port} : http://localhost:4444/`);
+  console.log(`server listening in port:${port} : http://localhost:6446/`);
 });
 
 app.get("/", (req, res) => {
